@@ -7,7 +7,7 @@ class avtorModel(models.Model):
     kitob_nomi = models.CharField(default='', max_length=15)
     janri = models.CharField(default='', max_length=15)
     sifati = models.CharField(max_length=13, default='')
-    avtor = models.ForeignKey(on_delete=models.CASCADE)
+    avtor = models.CharField(default='', max_length=15)
     yili = models.DateField(default='')
     def __str__(self) -> str:
         return self.kitob_nomi
