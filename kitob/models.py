@@ -13,14 +13,4 @@ class avtorModel(models.Model):
         return self.kitob_nomi
     class Meta:
         db_table = 'kitob'
-        
-class avtoridModel(models.Model):
-    avtor_ismi = models.CharField(default='', max_length=15)
-    kitoblari = models.CharField(default='', max_length=15)
-    avtor_familiyasi = models.CharField(max_length=13, default='')
-    tugulgan_sana = models.DateField(default='')
-    def __str__(self) -> str:
-        return self.avtor_ismi
-
-    class Meta:
-        db_table = 'avtor'
+    
