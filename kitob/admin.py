@@ -9,4 +9,4 @@ class avtorAdmin(admin.ModelAdmin):
     search_fields = ['avtori', 'kitob_nomi']
 
 
-admin.site.register(avtorModel, avtorAdmin)
+admin.site.register(avtorModel)
